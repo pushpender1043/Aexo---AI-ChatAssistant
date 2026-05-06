@@ -82,12 +82,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signOut();
   };
 
+  // YAHAN PE AAYA HAI MAIN CHANGE 🔥
   const signInWithGoogle = async () => {
-    const { lovable } = await import("@/integrations/lovable/index");
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
+    // Lovable ka hook hata ke, direct Supabase ka OAuth use kar rahe hain
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        // window.location.origin assure karega ki Vercel aur Local dono pe sahi redirect ho
+        redirectTo: `${window.location.origin}/dashboard`
+      }
     });
-    if (result.error) throw result.error;
+
+    if (error) {
+      throw new Error(error.message);
+    }
   };
 
   return (
