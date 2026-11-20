@@ -32,17 +32,6 @@ Based on the application screens, here is what Aexo brings to the table:
 
 ---
 
-## 📸 Screenshots
-
-| Welcome & Auth | Dashboard & Tools |
-| :---: | :---: |
-| <img src="Screenshot 2026-07-29 104732.jpg" width="250"/> <br/> <img src="Screenshot 2026-07-29 104810.jpg" width="250"/> | <img src="Screenshot 2026-07-29 104835.jpg" width="250"/> <br/> <img src="Screenshot 2026-07-29 104850.jpg" width="250"/> |
-
-| Live Voice & History | Multimodal Chat |
-| :---: | :---: |
-| <img src="Screenshot 2026-07-29 104907.png" width="250"/> <br/> <img src="Screenshot 2026-07-29 104926.png" width="250"/> | <img src="Screenshot 2026-07-29 104955.jpg" width="250"/> <br/> <img src="Screenshot 2026-07-29 105023.jpg" width="250"/> |
-
----
 
 ## 🚀 Getting Started
 
